@@ -1,0 +1,32 @@
+.taskBody{
+    display: grid;
+    grid-auto-rows: 100%;
+    width: 100%;
+    margin-left: 25rem;
+    margin-top: 2rem;
+}
+
+.textQuanti{
+    font-weight: bold;
+    text-align:inherit;
+    display: grid;
+    grid-auto-flow: column;
+    width: 75%;
+}
+
+.createdTextTasks{
+    color: var(--blue-dark);
+    text-shadow: 1px 1px solid var(--gray-500);
+    font-size: 1.1rem;
+}
+
+.qtdCreatedTasks{
+    color: var(--gray-200);
+    background-color: var(--gray-400);
+    border-radius: 8px;
+    padding: .1rem .5rem;
+}
+
+.qtdTextFinishedTasks{
+    color: var(--purple);
+}
