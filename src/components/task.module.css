@@ -1,0 +1,28 @@
+.body{
+    width: 40rem;
+    border: 1px solid var(--gray-400);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content:space-between;
+    color: var(--gray-200);
+    background-color: var(--gray-400);
+    margin-bottom: 0.5rem;
+}
+
+.deleteButton{
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: var(--gray-400);
+
+}
+
+
+
+.trash:hover{
+    color: var(--danger);
+    cursor: pointer;
+}

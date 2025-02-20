@@ -1,17 +1,35 @@
-.taskBody{
-    display: grid;
-    grid-auto-rows: 100%;
+.taskBody {
+    display: flex;
+    flex-direction: column; /* Mantém os elementos empilhados */
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin-left: 25rem;
     margin-top: 2rem;
+    text-align: center;
 }
 
-.textQuanti{
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.taskBar {
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+.textQuanti {
     font-weight: bold;
-    text-align:inherit;
-    display: grid;
-    grid-auto-flow: column;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
     width: 75%;
+    max-width: 600px; /* Limita a largura para centralização */
+    margin: 1rem auto; /* Centraliza horizontalmente */
 }
 
 .createdTextTasks{
@@ -29,4 +47,51 @@
 
 .qtdTextFinishedTasks{
     color: var(--purple);
+}
+
+
+.taskForm {
+    display: flex;
+    align-items: center;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+}
+
+.taskValueInput{
+
+    background: var(--gray-500);
+    border: 1px solid var(--gray-700);
+    resize: none;
+    height: 3rem;
+    padding: .75rem;
+    border-radius: 8px;
+    color: var(--gray-300);
+    margin-right: .5rem;
+    width: 30rem;
+}
+
+
+.taskForm button[type=submit] {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--gray-700);
+    background-color: var(--blue);
+    color: var(--gray-100);
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+}
+
+.taskForm button[type=submit]:not(:disabled):hover {
+    background: var(--blue-dark);
+}
+
+.taskForm button svg{
+    margin-left: 0.2rem;
+}
+
+.taskForm button:disabled{
+    opacity: 0.7;  
 }
